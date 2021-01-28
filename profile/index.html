@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+        <h1 class="header__title">Tu perfil</h1>
+    </header>
+    <section class="profile">
+        <img src="./assets/profile.jpg" alt="profile image" class="profile__form--image">
+        <form action="#" onsubmit="return false;" class="profile__form">
+            <div>
+                <h4>Tu Nombre:</h4>
+                <input type="text" name="nameInput" class="profile__form--nameInput" value="Jhon Roman">
+            </div>
+            <div>
+                <h4>Numero de telefono:</h4>
+                <input type="tel" name="phoneInput" class="profile__form--phoneInput" value="+502 1243-1543">
+            </div>
+            <div>
+                <h4>Tu dirección:</h4>
+                <input type="text" name="addressInput" class="profile__form--addressInput" value="12 avenida, 14-41 zona 1">
+            </div>
+            <div>
+                <h4>Correo electronico:</h4>   
+                <input type="email" name="emailInput" class="profile__form--emailInput" value="john@gmail.com">
+            </div>
+            <button type="submit" class="profile__form--button">Guardar</button>
+        </form>
+    </section>
+    <footer>
+        <h5>Maria's 2021</h5>
+        <h5>+502 4312-9421</h5>
+        <h5><a href="#">Contact Us</a></h5>
+    </footer>
+</body>
+</html>

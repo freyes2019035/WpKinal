@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+    scroll-behavior: smooth;
+}
+:root{
+    --height100vh: 100vh;
+    --titlegrayColor: #707070;
+    --dateFontSize: 2.8rem;
+    --fontWeightDate: bolder;
+    --weight100: 100;
+    --marginT20px: 20px;
+    --textJustify: justify;
+}
+body{
+    height: 100vh;
+}
+.header{
+    background-image: url(./assets/banner.jpg);
+    height: 28%;
+    width: 100%;
+    background-position: bottom;
+}
+.header .header__title{
+    color: white;
+    padding-top: 4%;
+    padding-left: 5%;
+    font-size: 55px;
+    font-weight: bold;
+}
+.header .header__subtitle{
+    color: white;
+    padding-left: 5%;
+    font-weight: 100;
+}
+.history{
+    width: 100%;
+    height: auto;
+}
+.history .history__title{
+    color: var(--titlegrayColor);
+    text-align: center;
+    margin-top: 5px;
+    font-size: 3.3rem;
+}
+.history .history__subtitle{
+    color: var(--titlegrayColor);
+    font-weight: 100;
+    text-align: center;
+    font-size: 12pt;
+    margin-top: 3px;
+}
+.history .history__dates{
+    display: grid;
+    grid-template-rows: 4;
+    grid-template-columns: 3;
+}
+.history .history__dates .history__dates--date1{
+    grid-column: 1;
+    grid-row: 1;
+    width: 500px;
+    height: 300px;
+    margin: 40px 0 5px 20px;
+}
+.history .history__dates .history__dates--date1 h2{
+    color: var(--titlegrayColor);
+    font-size: var(--dateFontSize);
+    font-weight: var(--fontWeightDate);
+}
+.history .history__dates .history__dates--date1 p{
+    font-weight: var(--weight100);
+    margin-top: var(--marginT20px);
+    text-align: var(--textJustify);
+}
+.history .history__dates .history__dates--img1{
+    filter: grayscale(100%);
+    margin-top: 30px;
+    width: 500px;
+    height: 300px;
+    grid-row: 1;
+    grid-column: 2;
+}
+.history .history__dates .history__dates--date2{
+    grid-row: 2;
+    grid-column: 2;
+    width: 500px;
+    height: 300px;
+    margin: 40px 0 5px 20px;
+}
+.history .history__dates .history__dates--date2 h2{
+    color: var(--titlegrayColor);
+    font-size: var(--dateFontSize);
+    font-weight: var(--fontWeightDate);
+}
+.history .history__dates .history__dates--date2 p{
+    font-weight: var(--weight100);
+    margin-top: var(--marginT20px);
+    text-align: var(--textJustify);
+}
+.history .history__dates .history__dates--img2{
+    filter: grayscale(100%);
+    margin-top: 30px;
+    width: 500px;
+    height: 300px;
+    grid-row: 2;
+    grid-column: 1;
+    margin-left: 50px;
+}
+.history .history__dates .history__dates--date3{
+    grid-row: 3;
+    grid-column: 1;
+    justify-content: flex-start;
+    width: 500px;
+    height: 300px;
+    margin: 40px 0 5px 20px;
+}
+.history .history__dates .history__dates--date3 h2{
+    color: var(--titlegrayColor);
+    font-size: var(--dateFontSize);
+    font-weight: var(--fontWeightDate);
+}
+.history .history__dates .history__dates--date3 p{
+    font-weight: var(--weight100);
+    margin-top: var(--marginT20px);
+    text-align: var(--textJustify);
+}
+.history .history__dates .history__dates--img3{
+    filter: grayscale(100%);
+    margin-top: 30px;
+    width: 500px;
+    height: 300px;
+    grid-row: 3;
+    grid-column: 2;
+    margin-left: 50px;
+}
+.history .history__dates .history__dates--date4{
+    grid-row: 4;
+    grid-column: 2;
+    justify-content: flex-end;
+    width: 500px;
+    height: 300px;
+    margin: 40px 0 5px 20px;
+}
+.history .history__dates .history__dates--date4 h2{
+    color: var(--titlegrayColor);
+    font-size: var(--dateFontSize);
+    font-weight: var(--fontWeightDate);
+}
+.history .history__dates .history__dates--date4 p{
+    font-weight: var(--weight100);
+    margin-top: var(--marginT20px);
+    text-align: var(--textJustify);
+}
+.history .history__dates .history__dates--img4{
+    filter: grayscale(100%);
+    margin-top: 30px;
+    width: 500px;
+    height: 300px;
+    grid-row: 4;
+    grid-column: 1;
+    margin-left: 50px;
+}
+footer{
+    width: 100%;
+    height: 10%;
+    background-color: #F25151;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer h5{
+    color: white;
+    font-size: 14pt;
+    font-weight: 100;
+}
+footer h5 a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+footer h5 a:hover{
+    color: blue;
+}
+@media only screen and (max-width: 600px){
+    .history .history__dates{
+        grid-template-columns: 1;
+        grid-template-rows: 8;
+    }
+    .history .history__dates .history__dates--img1{
+        margin-top: 0;
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .history .history__dates .history__dates--date2{
+        text-align: none;
+        grid-row: 3;
+        grid-column: 1;
+    }
+    .history .history__dates .history__dates--img2{
+        margin: 0;
+        grid-column: 1;
+        grid-row: 4;
+
+    }
+    .history .history__dates .history__dates--date3{
+        text-align: none;
+        grid-row: 5;
+        grid-column: 1;
+    }
+    .history .history__dates .history__dates--img3{
+        margin: 0;
+        grid-column: 1;
+        grid-row: 6;
+    }
+    .history .history__dates .history__dates--date4{
+        text-align: none;
+        grid-row: 7;
+        grid-column: 1;
+    }
+    .history .history__dates .history__dates--img4{
+        margin: 0;
+        grid-column: 1;
+        grid-row: 8;
+    }
+}     
+
+/*CSS MADE BY FREDY REYES 2019035*/

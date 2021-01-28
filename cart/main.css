@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+:root{
+    --textWhite: #FFFFFF;
+    --shadowSM: 0 0 5pt 0.5pt #D3D3D3;
+    --buttonCursor: pointer;
+    --shadowXL: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+    --grayTitle: #707070;
+}
+header{
+    background:  linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.486)), url(./assets/banner.jpg);
+    height: 20vh;
+    width: 100%;
+    background-position: bottom;
+}
+header h1{
+    color: var(--textWhite);
+    padding-top: 2%;
+    padding-left: 5%;
+    font-size: 55px;
+    font-weight: bold;
+}
+.cart{
+    height: 70vh;
+    text-align: center;
+}
+.cart .cart__title{
+    text-align: center;
+    color: var(--grayTitle);
+    margin-top: 15px;
+    font-size: 3rem;
+}
+.cart .cart__table{
+    margin-top: 30px;
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart .cart__table td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+.cart .cart__table tr:nth-child(even) {
+    background-color: #dddddd;
+}
+.cart .cart__table .cart__table--img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.bold{
+    font-weight: bolder;
+}
+.cart .cart__button{
+    margin-top: 50px;
+    cursor: var(--buttonCursor);
+    background-color: #F25151;
+    color: white;
+    border-radius: 50px;
+    width: 125px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+    
+}
+.cart .cart__button:hover{
+    box-shadow: 0 0 5pt 3pt #D3D3D3;
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+footer{
+    width: 100%;
+    height: 10vh;
+    background-color: #F25151;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer h5{
+    color: white;
+    font-size: 14pt;
+    font-weight: 100;
+}
+footer h5 a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+footer h5 a:hover{
+    color: blue;
+}

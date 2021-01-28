@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+  Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+:root{
+    --OutlineNone: none;
+    --borderNone: none;
+    --inputTextIndent: 10px;
+    --inputBorderRadius: 5px;
+    --inputShadow: 0 0 5pt 0.5pt #D3D3D3;
+    --inputHeight: 40px;
+    --inputWidth: 250px;
+    --inputMarginRigth: 40px;
+    --buttonCursor: pointer;
+}
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+.register .register__card{
+    height: 450px;
+    width: 900px;
+    border-radius: 20px;
+    display: block;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.register .register__card .register__card--registerTitle{
+    color: #707070;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.register .register__card .register__form{
+    padding-top: 50px;
+}
+input {
+    text-indent: 10px;
+}
+input::placeholder{
+    font-size: 15px;
+    font-weight: 100;
+}
+.register .register__card .register__form .register__form--fullNameInput{
+    width: var(--inputWidth);
+    height: var(--inputHeight);
+    border-radius: var(--inputBorderRadius);
+    border: var(--borderNone);
+    outline: var(--OutlineNone);
+    box-shadow: var(--inputShadow);
+    margin-right: var(--inputMarginRigth);
+}
+.register .register__card .register__form .register__form--addressInput{
+    width: var(--inputWidth);
+    height: var(--inputHeight);
+    border-radius: var(--inputBorderRadius);
+    border: var(--borderNone);
+    outline: var(--OutlineNone);
+    box-shadow: var(--inputShadow);
+}
+.register .register__card .register__form .register__form--emailInput{
+    margin-top: 35px;
+    margin-right: var(--inputMarginRigth);
+    width: var(--inputWidth);
+    height: var(--inputHeight);
+    border-radius: var(--inputBorderRadius);
+    border: var(--borderNone);
+    outline: var(--OutlineNone);
+    box-shadow: var(--inputShadow);
+}
+.register .register__card .register__form .register__form--passwordInput{
+    width: var(--inputWidth);
+    height: var(--inputHeight);
+    border-radius: var(--inputBorderRadius);
+    border: var(--borderNone);
+    outline: var(--OutlineNone);
+    box-shadow: var(--inputShadow);
+}
+.register .register__card .register__form  .register__form--checkbox{
+    margin-top: 20px;
+    display: inline-block;
+    margin-left: -198px;
+}
+.register .register__card .register__footer{
+    margin-top: 90px;
+    border-radius: 0px 0px 20px 20px;
+    width: 900px;
+    height: 90px;
+    background-color: #f25454;
+}
+.register .register__card .register__footer .register__footer--submitButton{
+    cursor: var(--buttonCursor);
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    width: 120px;
+    height: 40px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+.register .register__card .register__footer .register__footer--submitButton:hover{
+    box-shadow: 0 0 5pt 3pt #D3D3D3;
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+/*CSS MADE BY FREDY REYES 2019035*/

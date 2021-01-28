@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+.header{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.486)), url(./assets/banner.jpg);
+    height: 28%;
+    width: 100%;
+    background-position: bottom;
+}
+.header .header__title{
+    color: white;
+    padding-top: 4%;
+    padding-left: 5%;
+    font-size: 55px;
+    font-weight: bold;
+}
+.header .header__subtitle{
+    color: white;
+    padding-left: 5%;
+    font-weight: 100;
+}
+.contact{
+    width: 100%;
+    height: 75vh;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact .contact__elements--map iframe{
+    margin-left: 0px;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.10)
+}
+.contact__elements--description{
+    text-align: justify;
+    font-size: 18px;
+    padding-left: 77px;
+    padding-right: 50px;
+    padding-bottom: 100px;
+    color: #707070;
+}
+.contact__elements--description img{
+    width: 25px;
+    height: 25px;
+}
+.contact__elements--description span{
+    padding-left: 20px;
+}
+.contact__elements--description p{
+    padding-top: 20px;
+}
+.sugestions{
+    width: 100%;
+    height: 40vh;
+}
+.sugestions .sugestions__title{
+    font-size: 2.5rem;
+    margin-top: 50px;
+    color: #707070;
+    text-align: center;
+}
+.sugestions .sugestions__form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 27vh;
+    flex-direction: column;
+}
+.sugestions .sugestions__form .sugestions__form--input{
+    display: block;
+    width: 500px;
+    height: 40px;
+    border: none;
+    box-shadow: 0 0 5pt 0.5pt #D3D3D3;
+    outline: none;
+    text-indent: 150px;
+    border-radius: 10px;
+    font-size: 14pt;
+}
+.sugestions .sugestions__form .sugestions__form--button{
+    background-color: #F25151;
+    color: white;
+    border-radius: 50px;
+    width: 120px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.sugestions .sugestions__form .sugestions__form--button:active{
+    box-shadow: 0 0 5pt 10pt #D3D3D3;
+}
+
+footer{
+    width: 100%;
+    height: 10%;
+    background-color: #F25151;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer h5{
+    color: white;
+    font-size: 14pt;
+    font-weight: 100;
+}
+footer h5 a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+footer h5 a:hover{
+    color: blue;
+}
+@media only screen and (max-width: 600px){
+    .contact{
+        flex-direction: column;
+        height: 130vh;
+    }
+    .contact .contact__elements--map iframe{
+        padding: 0;
+        width: auto;
+    }
+    .contact__elements--description{
+        padding-top: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}     
