@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+:root{
+    --bg-white: #ffffff;
+    --text-white: #ffffff;
+    --text-gray: #707070;
+    --bg-semiWhite: #F5F3F1;
+    --shadowXL: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+header{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.486)), url(../assets/bread/bread__banner.jpg);
+    height: 150px;
+    width: 100%;
+    background-position: center;
+}
+header h1{
+    font-size: 4rem;
+    color: var(--text-white);
+    padding-top: 30px;
+    padding-left: 60px;
+}
+ul {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+}
+li{
+    float: left;
+}
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+    font-size: 14pt;
+    color: var(--text-white);
+}
+li a:hover {
+    transform: translateY(-2px);
+}
+.trans{
+    opacity: 1;
+    transition: opacity 1s linear;
+}
+.navbar__Display--None{
+    opacity: 0;
+}
+.navbar__Display--true ul{
+    background: #333;
+    transition: background .5s;
+}
+.cakes{
+    height: auto;
+    padding-bottom: 50px;
+    width: 100%;
+    background-color: var(--bg-semiWhite);
+}
+.cakes__title{
+    width: 600px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cakes__title h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--text-gray);
+    padding-top: 0.8em;
+}
+.cakes hr{
+    margin-top: 20px;
+    height: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    background-color: var(--text-gray);
+}
+.cakes .cakes__menu{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.cakes .cakes__menu .cakes__menu--item{
+    margin-top: 50px;
+    width: 410px;
+    height: 550px;
+    border-radius: 20px;
+    box-shadow: var(--shadowXL);
+}
+.cakes .cakes__menu .cakes__menu--item img{
+    width: 100%;
+    max-width: 410px;
+    height: 260px;
+    border-radius: 20px 20px 0px 0px;
+}
+.cakes .cakes__menu .cakes__menu--item h3{
+    font-size: 1.5em;
+    text-align: center;
+    color:#333;
+    font-weight: 900;
+}
+.cakes .cakes__menu .cakes__menu--item p{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 12.5pt;
+    font-weight: 100;
+}
+.addTocart__button{
+    background-color: #F25151;
+    color: white;
+    border-radius: 50px;
+    width: 125px;
+    height: 45px;
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+    margin-left: 133px;
+}
+.addTocart__button:hover{
+    box-shadow: 0 0 5pt 3pt #D3D3D3;
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+footer{
+    width: 100%;
+    height: 10vh;
+    background-color: #F25151;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer h5{
+    color: white;
+    font-size: 14pt;
+    font-weight: 100;
+}
+footer h5 a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+footer h5 a:hover{
+    color: blue;
+}
+.float-right{
+    float: right;
+}
+@media only screen and (max-width: 600px){
+    nav{
+        width: 100%;
+    }
+    nav > ul > li {
+        float: left;
+    }
+    .float-right{
+        float: left;
+    }
+    nav > ul > li > a {
+        padding: 16px 13px;
+        font-size: 13px;
+    }
+}
