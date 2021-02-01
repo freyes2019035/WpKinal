@@ -2,7 +2,7 @@
 let myNav = document.getElementById('navbar');
 console.log(myNav.classList)
 window.onscroll = function () { 
-    if (document.body.scrollTop >= 20 || document.documentElement.scrollTop >= 20) {
+    if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200) {
         myNav.classList.add("navbar__Display--true");
         myNav.classList.remove("navbar__Display--None");
     } 

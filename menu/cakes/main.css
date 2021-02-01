@@ -17,6 +17,93 @@
     0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
 }
+.nav {
+    height: 50px;
+    width: 100%;
+    background-color: #333;
+    position: fixed;
+}
+
+.nav > .nav-header {
+    display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+    display: none;
+}
+
+.nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+}
+
+.nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+    display: none;
+}
+
+.trans {
+    opacity: 1;
+    transition: opacity 1s linear;
+}
+
+.navbar__Display--None {
+    opacity: 0;
+}
+
+.navbar__Display--true ul {
+    background: #333;
+    transition: background .5s;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown a {
+    color: #efefef;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+.dropdown-content p a{
+    color: #333;
+}
+.dropdown-content p a:hover{
+    color: #333;
+    text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 header{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.486)), url(../assets/cakes/cakes__banner.jpg);
     height: 150px;
@@ -28,30 +115,7 @@ header h1{
     color: var(--text-white);
     padding-top: 30px;
     padding-left: 60px;
-}
-ul {
-    width: 100%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-}
-li{
-    float: left;
-}
-li a {
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    transition: 0.2s ease-in-out;
-    font-size: 14pt;
-    color: var(--text-white);
-}
-li a:hover {
-    transform: translateY(-2px);
+}ransform: translateY(-2px);
 }
 .trans{
     opacity: 1;
@@ -159,22 +223,4 @@ footer h5 a{
 }
 footer h5 a:hover{
     color: blue;
-}
-.float-right{
-    float: right;
-}
-@media only screen and (max-width: 600px){
-    nav{
-        width: 100%;
-    }
-    nav > ul > li {
-        float: left;
-    }
-    .float-right{
-        float: left;
-    }
-    nav > ul > li > a {
-        padding: 16px 13px;
-        font-size: 13px;
-    }
 }
